@@ -5,7 +5,7 @@ export const constantRoutes = [
     name: 'Login',
   },
   {
-    path:'/',
+    path: '/',
     component: () => import('@/views/home/index.vue'),
     name: 'Home',
   },
@@ -18,6 +18,6 @@ export const constantRoutes = [
   {
     path: '/:catchAll(.*)',
     redirect: '/404',
-    name: 'Any'
-  }
+    name: 'Any',
+  },
 ]

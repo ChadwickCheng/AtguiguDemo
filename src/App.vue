@@ -4,10 +4,6 @@
   </div>
 </template>
 
-<script setup lang='ts' name='App'>
+<script setup lang="ts" name="App"></script>
 
-</script>
-
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

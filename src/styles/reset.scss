@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   background-repeat: no-repeat;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -90,9 +90,9 @@ textarea {
 }
 
 button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
+html [type='button'],
+[type='reset'],
+[type='submit'] {
   padding: 0;
   border: 0;
   color: inherit;
@@ -124,7 +124,7 @@ input {
   }
 }
 
-[type="number"] {
+[type='number'] {
   -moz-appearance: textfield;
 
   &::-webkit-inner-spin-button,
@@ -135,7 +135,7 @@ input {
   }
 }
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
 
   &::-webkit-search-cancel-button,
