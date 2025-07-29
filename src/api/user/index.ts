@@ -6,10 +6,10 @@ enum API {
   USERINFO_URL = '/user/info',
 }
 
-export const reqLogin = (data: loginForm) => {
-  return request.post<loginResponseData>(API.LOGIN_URL, data)
+export const reqLogin = (data: loginForm): Promise<loginResponseData> => {
+  return request.post(API.LOGIN_URL, data)
 }
 
-export const reqUserInfo = () => {
-  return request.get<userResponseData>(API.USERINFO_URL)
+export const reqUserInfo = (): Promise<userResponseData> => {
+  return request.get(API.USERINFO_URL)
 }
