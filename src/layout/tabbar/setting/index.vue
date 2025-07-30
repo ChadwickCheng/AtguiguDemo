@@ -2,12 +2,16 @@
   <el-button type="primary" size="small" icon="Refresh" circle></el-button>
   <el-button type="primary" size="small" icon="FullScreen" circle></el-button>
   <el-button type="primary" size="small" icon="Setting" circle></el-button>
-  <img src="/images/appicon.png" style="width:24px; height:24px; border-radius: 12px; margin-right: 0px 10px;" alt="#">
+  <img
+    src="/images/appicon.png"
+    style="width: 24px; height: 24px; border-radius: 12px; margin-right: 0px 10px"
+    alt="#"
+  />
   <el-dropdown trigger="click">
     <span class="el-dropdown-link">
       Kuonji Alice
       <el-icon class="el-icon--right">
-        <arrow-down/>
+        <arrow-down />
       </el-icon>
     </span>
     <template #dropdown>
@@ -20,10 +24,6 @@
   </el-dropdown>
 </template>
 
-<script setup lang='ts' name='RightTabbar'>
+<script setup lang="ts" name="RightTabbar"></script>
 
-</script>
-
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

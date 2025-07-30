@@ -1,7 +1,7 @@
 import SvgIcon from '@/components/SvgIcon/index.vue'
 import type { Component } from 'vue'
 import type { App } from 'vue'
-import  * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 const allGlobalComponent: { [key: string]: Component } = {
   SvgIcon,

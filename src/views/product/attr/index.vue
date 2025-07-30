@@ -1,11 +1,5 @@
-<template>
-  attr
-</template>
+<template>attr</template>
 
-<script setup lang='ts' name='Attr'>
+<script setup lang="ts" name="Attr"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

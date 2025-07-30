@@ -1,11 +1,5 @@
-<template>
-  spu
-</template>
+<template>spu</template>
 
-<script setup lang='ts' name='Spu'>
+<script setup lang="ts" name="Spu"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

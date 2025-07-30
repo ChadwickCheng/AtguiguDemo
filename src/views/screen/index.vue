@@ -1,11 +1,5 @@
-<template>
-  数据大屏
-</template>
+<template>数据大屏</template>
 
-<script setup lang='ts' name='Screen'>
+<script setup lang="ts" name="Screen"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

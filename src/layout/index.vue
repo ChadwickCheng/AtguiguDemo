@@ -1,39 +1,42 @@
 <template>
   <div class="layout_container">
     <!-- 左侧菜单 -->
-    <div class="layout_slider" :class="{ 'fold': LayoutSettingStore.fold?true:false }">
+    <div class="layout_slider" :class="{ fold: LayoutSettingStore.fold ? true : false }">
       <LeftLogo />
       <!-- 滚动组件放菜单组件 -->
       <el-scrollbar class="scrollbar">
-        <el-menu :collapse="LayoutSettingStore.fold?true:false" background-color="#001529" text-color="white"
-        active-text-color="#409eff" :default-active="$route.path">
+        <el-menu
+          :collapse="LayoutSettingStore.fold ? true : false"
+          background-color="#001529"
+          text-color="white"
+          active-text-color="#409eff"
+          :default-active="$route.path"
+        >
           <LeftMenu :menuList="userStore.menuRoutes" />
         </el-menu>
       </el-scrollbar>
     </div>
     <!-- 顶部导航 -->
-      <div class="layout_tabbar" :class="{ 'fold': LayoutSettingStore.fold?true:false }">
-        <Tabbar />
-      </div>
+    <div class="layout_tabbar" :class="{ fold: LayoutSettingStore.fold ? true : false }">
+      <Tabbar />
+    </div>
     <!-- 内容展示区域 -->
-      <div class="layout_main" :class="{ 'fold': LayoutSettingStore.fold?true:false }">
-        <Main></Main>
-      </div>
+    <div class="layout_main" :class="{ fold: LayoutSettingStore.fold ? true : false }">
+      <Main></Main>
+    </div>
   </div>
 </template>
 
-<script setup lang='ts' name='Layout'>
-  import LeftLogo from './logo/index.vue';
-  import LeftMenu from './menu/index.vue';
-  import useUserStore from '@/stores/modules/user';
-  import Main from './main/index.vue';
-  import Tabbar from './tabbar/index.vue';
-  import useLayoutSettingStore from '@/stores/modules/setting';
+<script setup lang="ts" name="Layout">
+import LeftLogo from './logo/index.vue'
+import LeftMenu from './menu/index.vue'
+import useUserStore from '@/stores/modules/user'
+import Main from './main/index.vue'
+import Tabbar from './tabbar/index.vue'
+import useLayoutSettingStore from '@/stores/modules/setting'
 
-  const userStore = useUserStore();
-  const LayoutSettingStore = useLayoutSettingStore();
-
-
+const userStore = useUserStore()
+const LayoutSettingStore = useLayoutSettingStore()
 </script>
 
 <style scoped lang="scss">

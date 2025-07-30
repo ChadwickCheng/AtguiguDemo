@@ -1,11 +1,5 @@
-<template>
-  权限
-</template>
+<template>权限</template>
 
-<script setup lang='ts' name='Permission'>
+<script setup lang="ts" name="Permission"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

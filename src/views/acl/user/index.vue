@@ -1,11 +1,5 @@
-<template>
-  用户
-</template>
+<template>用户</template>
 
-<script setup lang='ts' name='User'>
+<script setup lang="ts" name="User"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

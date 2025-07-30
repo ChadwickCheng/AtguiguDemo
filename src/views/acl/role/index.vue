@@ -1,11 +1,5 @@
-<template>
-  角色
-</template>
+<template>角色</template>
 
-<script setup lang='ts' name='Role'>
+<script setup lang="ts" name="Role"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

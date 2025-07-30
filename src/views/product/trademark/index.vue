@@ -1,11 +1,5 @@
-<template>
-  Trademark
-</template>
+<template>Trademark</template>
 
-<script setup lang='ts' name='Trademark'>
+<script setup lang="ts" name="Trademark"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

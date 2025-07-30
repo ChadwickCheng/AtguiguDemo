@@ -1,11 +1,5 @@
-<template>
-  sku
-</template>
+<template>sku</template>
 
-<script setup lang='ts' name='Sku'>
+<script setup lang="ts" name="Sku"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
