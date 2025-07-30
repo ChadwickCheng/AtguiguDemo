@@ -3,11 +3,14 @@ import { reqLogin } from '@/api/user'
 import type { loginForm } from '@/api/user/type'
 import type { UserState } from './types/type'
 import { SET_TOKEN, GET_TOKEN } from '@/utils/token'
+// 常量路由
+import { constantRoutes } from '@/router/routes'
 
 const useUserStore = defineStore('User', {
   state: (): UserState => {
     return {
       token: GET_TOKEN(),
+      menuRoutes: constantRoutes, // 初始路由
     }
   },
   actions: {
