@@ -36,12 +36,13 @@
 <script setup lang="ts" name="Login">
 import { User, Lock } from '@element-plus/icons-vue'
 import { reactive, ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import useUserStore from '@/stores/modules/user'
 import { ElNotification } from 'element-plus'
 import { getTime } from '@/utils/time'
 
 const router = useRouter()
+const route = useRoute()
 const useStore = useUserStore()
 
 const loading = ref(false)
@@ -64,7 +65,9 @@ const login = async () => {
   loading.value = true
   try {
     await useStore.userLogin(loginForm)
-    router.push('/')
+    // 判断登录时是否有重定向地址
+    const redirect = route.query.redirect as string
+    router.push(redirect || '/')
     ElNotification({
       title: `${getTime()}, 欢迎回来`,
       message: '欢迎回来！',

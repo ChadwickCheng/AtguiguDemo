@@ -53,8 +53,8 @@ export default [
   {
     url: '/api/user/info',
     method: 'get',
-    response: ({ query }) => {
-      const { token } = query
+    response: ({ headers }) => {
+      const { token } = headers
       const userList = createUserList()
       const user = userList.find(user => user.token === token)
 

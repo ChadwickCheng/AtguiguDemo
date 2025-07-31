@@ -1,7 +1,7 @@
 <template>
   <div class="layout_container">
     <!-- 左侧菜单 -->
-    <div class="layout_slider" :class="{ fold: LayoutSettingStore.fold ? true : false }">
+    <div class="layout_slider">
       <LeftLogo />
       <!-- 滚动组件放菜单组件 -->
       <el-scrollbar class="scrollbar">
@@ -57,10 +57,6 @@ const LayoutSettingStore = useLayoutSettingStore()
       .el-menu {
         border-right: none;
       }
-    }
-
-    &.fold {
-      width: $base-menu-min-width;
     }
   }
 

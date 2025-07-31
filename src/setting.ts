@@ -1,5 +1,5 @@
 export default {
-  title: '乘着西风出发咯',
+  title: '【ころんば4号· デフォ子】八目鳗穴',
   logo: '/images/appicon.png',
   logoHidden: false,
 }

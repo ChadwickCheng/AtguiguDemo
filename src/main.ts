@@ -12,6 +12,8 @@ import 'virtual:svg-icons-register'
 import globalComponent from '@/components/index'
 // 全局样式
 import '@/styles/index.scss'
+// 路由鉴权
+import './permission'
 
 const app = createApp(App)
 
