@@ -39,11 +39,11 @@ const updateRefresh = () => {
 }
 
 const fullScreen = () => {
-  const full = document.fullscreenElement;
+  const full = document.fullscreenElement
   if (full) {
-    document.exitFullscreen();
+    document.exitFullscreen()
   } else {
-    document.documentElement.requestFullscreen();
+    document.documentElement.requestFullscreen()
   }
 }
 

@@ -31,7 +31,7 @@ const useUserStore = defineStore('User', {
     async userInfo() {
       const res = await reqUserInfo()
       // 获取成功存储信息
-      if(res.code === 200){
+      if (res.code === 200) {
         this.username = res.data.username
         this.avatar = res.data.avatar || ''
         return 'ok'
@@ -44,7 +44,7 @@ const useUserStore = defineStore('User', {
       this.username = ''
       this.avatar = ''
       REMOVE_TOKEN()
-    }
+    },
   },
   getters: {},
 })

@@ -27,7 +27,7 @@ router.beforeEach(async (to, from, next) => {
   const username = userStore.username
 
   if (token) {
-    if(to.path === '/login') {
+    if (to.path === '/login') {
       // 如果访问的是登录页，重定向到首页
       next({ path: '/' })
     } else {
@@ -48,7 +48,7 @@ router.beforeEach(async (to, from, next) => {
     }
   } else {
     // 未登录
-    if(to.path === '/login') {
+    if (to.path === '/login') {
       // 如果访问的是登录页，放行
       next()
     } else {

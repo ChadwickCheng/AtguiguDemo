@@ -7,20 +7,23 @@
 </template>
 
 <script setup lang="ts" name="Main">
-import useLayoutSettingStore from '@/stores/modules/setting';
-import { ref, watch, nextTick } from 'vue';
+import useLayoutSettingStore from '@/stores/modules/setting'
+import { ref, watch, nextTick } from 'vue'
 
-const layoutSettingStore = useLayoutSettingStore();
+const layoutSettingStore = useLayoutSettingStore()
 
-const flag = ref(true);
+const flag = ref(true)
 
-watch(() => layoutSettingStore.refresh, () => {
-  // 点刷新销毁路由 nextTick保证响应数据变化后dom更新完毕
-  flag.value = !flag.value;
-  nextTick(() => {
-    flag.value = true; // 恢复路由
-  });
-})
+watch(
+  () => layoutSettingStore.refresh,
+  () => {
+    // 点刷新销毁路由 nextTick保证响应数据变化后dom更新完毕
+    flag.value = !flag.value
+    nextTick(() => {
+      flag.value = true // 恢复路由
+    })
+  },
+)
 </script>
 
 <style scoped lang="scss">
