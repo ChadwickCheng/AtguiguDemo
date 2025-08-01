@@ -1,8 +1,8 @@
-import request from "@/utils/request";
-import type { TradeMarkResponseData } from "./type";
+import request from '@/utils/request'
+import type { TradeMarkResponseData } from './type'
 
 enum API {
-  TRADEMARK_URL = "/admin/product/baseTrademark"
+  TRADEMARK_URL = '/admin/product/baseTrademark',
 }
 
 // export const reqHasTrademark = (page: number, limit: number) => {
@@ -10,5 +10,5 @@ enum API {
 // }
 
 export const reqHasTrademark = (page: number, limit: number): Promise<TradeMarkResponseData> => {
-  return request.get(`${API.TRADEMARK_URL}/${page}/${limit}`);
+  return request.get(`${API.TRADEMARK_URL}/${page}/${limit}`)
 }
