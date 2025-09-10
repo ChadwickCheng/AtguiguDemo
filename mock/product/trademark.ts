@@ -169,7 +169,7 @@ export default [
   },
   // 添加品牌
   {
-    url: '/admin/product/baseTrademark/save',
+    url: '/api/admin/product/baseTrademark/save',
     method: 'post',
     response: ({ body }) => {
       const { tmName, logoUrl } = body
@@ -214,7 +214,7 @@ export default [
   },
   // 修改品牌
   {
-    url: '/admin/product/baseTrademark/update',
+    url: '/api/admin/product/baseTrademark/update',
     method: 'put',
     response: ({ body }) => {
       const { id, tmName, logoUrl } = body
@@ -270,7 +270,7 @@ export default [
   },
   // 删除品牌
   {
-    url: '/admin/product/baseTrademark/remove/:id',
+    url: '/api/admin/product/baseTrademark/remove/:id',
     method: 'delete',
     response: ({ query }) => {
       const { id } = query
@@ -357,5 +357,22 @@ export default [
         ok: true
       }
     }
+  },
+  // 图片上传接口
+  {
+    url: '/api/admin/product/fileUpload',
+    method: 'post',
+    response: () => {
+      return {
+        code: 200,
+        message: '上传成功',
+        data: {
+          url: 'https://tutti.fan/api/statics/KuonjiWeb/author_avatar/1713773330298-Y1kPk5OI4.jpg'
+        },
+        ok: true
+      }
+    }
   }
+  // 上传图片
+
 ]
